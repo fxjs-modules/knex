@@ -1,3 +1,11 @@
-import fibKnex from './sandbox'
+import SandBox from './sandbox'
 
-export = fibKnex
+import { FXJSKnex } from '../@types';
+
+const sandbox = new SandBox()
+const Knex = sandbox.require('knex', __dirname)
+
+const mod = <FXJSKnex.ExportModule>Knex;
+mod.SandBox = SandBox
+
+export = mod

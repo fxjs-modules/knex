@@ -1,40 +1,44 @@
 {
-  "name": "fib-knex",
+  "name": "@fxjs/knex",
   "version": "0.0.1",
-  "description": "",
-  "main": "lib/index.js",
+  "description": "fibjs wrapper & helper of knexjs",
+  "main": "lib",
   "types": "@types/index.d.ts",
   "scripts": {
     "build": "fib-typify src -o lib",
-    "ci": "fibjs test"
+    "test": "fibjs test",
+    "ci": "npm run build && npm run test",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/richardo2016/fib-knex.git"
+    "url": "git+https://github.com/fxjs-modules/knex.git"
   },
   "author": "richardo2016 <richardo2016@gmail.com>",
-  "license": "GPL-3.0",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/richardo2016/fib-knex/issues"
+    "url": "https://github.com/fxjs-modules/knex/issues"
   },
-  "homepage": "https://github.com/richardo2016/fib-knex#readme",
+  "homepage": "https://github.com/fxjs-modules/knex#readme",
+  "dependencies": {
+    "uuid": "^3.3.2"
+  },
   "devDependencies": {
-    "@fibjs/ci": "^2.1.0",
-    "@types/fibjs": "github:fibjs/fib-types#v1.0.7",
-    "fib-typify": "^0.2.0"
+    "@fibjs/ci": "^2.2.0",
+    "@types/fibjs": "^0.26.5",
+    "fib-typify": "^0.5.2",
+    "knex": "^0.16.3"
   },
   "ci": {
-    "type": "travis",
+    "type": "travis, appveyor",
     "version": [
       "0.21.0",
       "0.22.0",
       "0.23.0",
       "0.24.0",
-      "0.25.0"
+      "0.25.0",
+      "0.26.0",
+      "0.26.1"
     ]
-  },
-  "dependencies": {
-    "knex": "^0.14.6",
-    "uuid": "^3.2.1"
   }
 }
