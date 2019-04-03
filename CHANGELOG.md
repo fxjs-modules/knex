@@ -1,7 +1,13 @@
 
-v0.1.0 / 2019-04-03
+v0.1.1 / 2019-04-04
 ==================
 
+  * doc and typo fix.
+
+v0.1.0 / 2019-04-03
+===================
+
+  * Release v0.1.0
   * fix devDependencies.
   * normalize project structure, LICENSE config, rename to `@fxjs/knex`.
 
