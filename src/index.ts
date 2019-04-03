@@ -5,7 +5,6 @@ import SandBox from './sandbox'
 const sandbox = new SandBox()
 const OKnex: FXJSKnex.FXJSKnexModule.ExportModule = sandbox.require('knex', __dirname)
 
-const mod = OKnex;
-mod.SandBox = SandBox
+OKnex.SandBox = SandBox
 
-export = mod
+export = OKnex
