@@ -1,7 +1,14 @@
 
-v0.0.1 / 2018-06-19
+v0.1.0 / 2019-04-03
 ==================
 
+  * fix devDependencies.
+  * normalize project structure, LICENSE config, rename to `@fxjs/knex`.
+
+v0.0.1 / 2018-06-19
+===================
+
+  * Release v0.0.1
   * add @types
   * add travis and npm badget to READMD.md
   * basic
