@@ -26,6 +26,8 @@
   "devDependencies": {
     "@fibjs/ci": "^2.2.0",
     "@types/fibjs": "^0.26.5",
+    "@types/knex": "^0.16.1",
+    "@types/node": "^11.13.0",
     "fib-typify": "^0.5.2",
     "knex": "^0.16.3"
   },
