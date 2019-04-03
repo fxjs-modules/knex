@@ -1,7 +1,7 @@
 # Fibjs Wrapper For Knexjs
 
-[![Build Status](https://travis-ci.org/fxjs-modules/knex.svg)](https://travis-ci.org/fxjs-modules/knex)
 [![NPM version](https://img.shields.io/npm/v/@fxjs/knex.svg)](https://www.npmjs.org/package/@fxjs/knex)
+[![Build Status](https://travis-ci.org/fxjs-modules/knex.svg)](https://travis-ci.org/fxjs-modules/knex)
 [![Build status](https://ci.appveyor.com/api/projects/status/n8gbusvk9t69oo8m?svg=true)](https://ci.appveyor.com/project/richardo2016/knex)
 
 ## Introduction
@@ -16,8 +16,6 @@ There's no built-in `knex` in this package's dependencies, for purpose that you 
 
 if use typescript, install types to enable typo lint:
 
-- `@types/fibjs`
-- `@types/knex`
 - `@types/node`
 
 ## APIs

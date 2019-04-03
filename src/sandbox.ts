@@ -7,7 +7,7 @@ function patchMods (
     this: Box
 ) {
     this.add({
-        'uuid': this.require('./node_modules/uuid', __root)
+        'uuid': this.require('uuid', __root)
     })
 }
 
