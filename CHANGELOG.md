@@ -1,7 +1,14 @@
 
-v0.1.1 / 2019-04-04
+v0.1.2 / 2019-09-26
 ==================
 
+  * bugfix: fix typo.
+  * feat: use native `uuid.snowflake` to patch instead of `uuid` in npm.
+
+v0.1.1 / 2019-04-04
+===================
+
+  * Release v0.1.1
   * doc and typo fix.
 
 v0.1.0 / 2019-04-03
