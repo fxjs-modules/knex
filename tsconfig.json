@@ -9,6 +9,10 @@
             "es6",
             "es2015",
             "es2016"            
+        ],
+        "typeRoots": [
+            "@types",
+            "node_modules"
         ]
     }
 }

@@ -1,9 +1,9 @@
+/// <reference path="../@types/index.d.ts" />
+
 import SandBox from './sandbox'
 
-import { FXJSKnex } from '../@types';
-
 const sandbox = new SandBox()
-const OKnex: FXJSKnex.ExportModule = sandbox.require('knex', __dirname)
+const OKnex: FXJSKnex.FXJSKnexModule.ExportModule = sandbox.require('knex', __dirname)
 
 const mod = OKnex;
 mod.SandBox = SandBox
