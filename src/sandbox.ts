@@ -1,5 +1,6 @@
 import vm = require('vm')
 import path = require('path')
+import uuid = require('uuid')
 
 const __root = path.resolve(__dirname, '../')
 
@@ -7,7 +8,11 @@ function patchMods (
     this: Box
 ) {
     this.add({
-        'uuid': this.require('uuid', __root)
+        'uuid': {
+    		v4 () {
+    			return uuid.snowflake();
+    		}
+        }
     })
 }
 

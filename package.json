@@ -20,9 +20,7 @@
     "url": "https://github.com/fxjs-modules/knex/issues"
   },
   "homepage": "https://github.com/fxjs-modules/knex#readme",
-  "dependencies": {
-    "uuid": "^3.3.2"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@fibjs/ci": "^2.2.0",
     "@types/fibjs": "^0.26.5",
