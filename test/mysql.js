@@ -25,5 +25,13 @@ describe('mysql', () => {
             "insert into `coords` (`x`, `y`) values (20, NULL), (NULL, 30), (10, 20)"
         )
     })
+
+    it('escape when insert', () => {
+        const sql = knex('users')
+            .insert({a: 1, b: 'text', c: `what's that?`})
+            .toString()
+
+        assert.equal(sql, "insert into `users` (`a`, `b`, `c`) values (1, 'text', 'what\\'s that?')")
+    })
 })
 
