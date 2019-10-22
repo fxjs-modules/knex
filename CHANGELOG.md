@@ -1,7 +1,15 @@
 
-v0.1.2 / 2019-09-26
+v0.2.0 / 2019-10-22
 ==================
 
+  * feat: upgrade typo.
+  * feat: upgrade core dependencies knex, add test about escape.
+  * typo fix.
+
+v0.1.2 / 2019-09-26
+===================
+
+  * Release v0.1.2
   * bugfix: fix typo.
   * feat: use native `uuid.snowflake` to patch instead of `uuid` in npm.
 

@@ -1,6 +1,6 @@
 {
   "name": "@fxjs/knex",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "fibjs wrapper & helper of knexjs",
   "main": "lib",
   "types": "@types/index.d.ts",
