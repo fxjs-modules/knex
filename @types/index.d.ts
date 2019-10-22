@@ -1,10 +1,5 @@
-/// <reference types="fibjs" />
-/// <reference types="knex" />
-
+/// <reference types="@fibjs/types" />
 /// <reference path="./knex.d.ts" />
 
-declare module "@fxjs/knex" {
-    const FibKnex: FXJSKnex.FXJSKnexModule.ExportModule;
-
-    export = FibKnex;
-}
+declare var m: FKnexNS.ExportModule
+export = m
