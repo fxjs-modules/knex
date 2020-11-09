@@ -3,12 +3,12 @@
   "version": "0.2.0",
   "description": "fibjs wrapper & helper of knexjs",
   "main": "lib",
-  "types": "@types/index.d.ts",
+  "types": "typings/index.d.ts",
   "scripts": {
-    "build": "fib-typify src -o lib",
+    "build": "ftsc ./src/* --outDir ./lib",
     "test": "fibjs test",
     "ci": "npm run build && npm run test",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run ci"
   },
   "repository": {
     "type": "git",
@@ -23,10 +23,9 @@
   "dependencies": {},
   "devDependencies": {
     "@fibjs/ci": "^2.2.0",
-    "@fibjs/types": "^0.28.0",
+    "@fibjs/types": "^0.31.0",
     "@types/knex": "^0.16.1",
-    "@types/node": "^11.13.0",
-    "fib-typify": "^0.5.2",
+    "fib-typify": "^0.8.3",
     "knex": "^0.19.5"
   },
   "peerDependencies": {
